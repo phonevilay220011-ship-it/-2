@@ -1,0 +1,187 @@
+/* ຕັ້ງຄ່າພື້ນຖານ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Phetsarath OT', 'Noto Sans Lao', sans-serif;
+}
+
+body {
+    background-color: #07130b;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* 🟢 ໂຄງສ້າງແອັບ - ສີຂຽວເຂັມຫຼັກ 70% */
+.app-container {
+    width: 100%;
+    max-width: 420px;
+    background-color: #0f2a1a;
+    color: #ffffff;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 90px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+/* ส่วนหัว Header */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: #143622;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7bed9f; /* ສີຂຽວອ່ອນ 30% */
+}
+
+/* ปุ่มตะกร้า */
+.cart-icon {
+    position: relative;
+    background-color: #4cd137; /* ສີຂຽວອ່ອນ 30% */
+    color: #0f2a1a;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#badgeCount {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #ff4757;
+    color: white;
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ແບນເນີໂປຣໂມຊັນ */
+.hero-banner {
+    padding: 16px 20px;
+    background: linear-gradient(135deg, #143622, #1b4d2e);
+    margin: 16px 20px;
+    border-radius: 14px;
+    border: 1px solid #4cd137;
+}
+
+.hero-banner h2 {
+    font-size: 17px;
+    color: #7bed9f;
+    margin-bottom: 4px;
+}
+
+.hero-banner p {
+    font-size: 12px;
+    color: #dcdde1;
+}
+
+/* ລາຍການເມນູ */
+.menu-section {
+    padding: 0 20px;
+}
+
+.menu-section h3 {
+    font-size: 15px;
+    color: #7bed9f;
+    margin-bottom: 10px;
+}
+
+.food-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.food-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #143622;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #1e5233;
+}
+
+.food-info h4 {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+.food-info p {
+    font-size: 13px;
+    color: #4cd137;
+    font-weight: bold;
+}
+
+/* 🟢 ປຸ່ມເພີ່ມສິນຄ້າ - ສີຂຽວອ່ອນ 30% */
+.add-btn {
+    background-color: #4cd137;
+    color: #0f2a1a;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-btn:hover {
+    background-color: #7bed9f;
+}
+
+/* ແຖບກະຕ່າສິນຄ້າດ້ານລຸ່ມ */
+.cart-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #143622;
+    border-top: 2px solid #4cd137;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.cart-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#cartTotal {
+    font-size: 17px;
+    color: #7bed9f;
+    font-weight: bold;
+}
+
+.order-btn {
+    background-color: #4cd137;
+    color: #0f2a1a;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: #7bed9f;
+}

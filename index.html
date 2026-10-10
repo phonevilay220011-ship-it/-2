@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Fresh Smoothie</title>
+    <!-- ເຊື່ອມຕໍ່ໄຟລ໌ CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="brand">
+                <i class="fa-solid fa-leaf"></i>
+                <span>Green Fresh</span>
+            </div>
+            <div class="cart-icon">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span id="badgeCount">0</span>
+            </div>
+        </header>
+
+        <!-- Banner -->
+        <section class="hero-banner">
+            <h2>ສະມູທຕີ້ຜັກ ແລະ ຜົນໄມ້ສົດ 100%</h2>
+            <p>ເພີ່ມພະລັງຄວາມສົດຊື່ນໃຫ້ຮ່າງກາຍທຸກໆມື້!</p>
+        </section>
+
+        <!-- Menu List -->
+        <section class="menu-section">
+            <h3>ເມນູແນະນຳ</h3>
+            <div class="food-grid" id="menuGrid">
+                <!-- JavaScript ຈະສ້າງລາຍການເມນູມາໃສ່ບ່ອນນີ້ -->
+            </div>
+        </section>
+
+        <!-- Cart Bar ດ້ານລຸ່ມ -->
+        <div class="cart-bar">
+            <div class="cart-info">
+                <span id="cartCount">0 ຢ່າງ</span>
+                <strong id="cartTo tal">0 ກີບ</strong>
+            </div>
+            <button class="order-btn" onclick="checkout()">ສັ່ງຊື້ສິນຄ້າ</button>
+        </div>
+    </div>
+
+    <!-- ເຊື່ອມຕໍ່ໄຟລ໌ JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
